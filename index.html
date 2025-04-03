@@ -153,35 +153,79 @@
   </div>
 
 
-  <header class="site-navbar py-3 js-site-navbar site-navbar-target" role="banner" id="site-navbar">
-    <div class="container">
-      <div class="row align-items-center">
-  
-        <div class="col-4 col-xl-3 site-logo">  
-          <h1 class="mb-0"><a href="./" class="text-white mb-0"><img src="./images/logo-blanco.png" id="logo" alt="Exacta Express Logo"></a></h1>
-        </div>
-  
-        <div class="col-8 d-inline-block d-xl-none ml-md-0 py-3 text-right" style="position: relative; top: 3px;">
-          <a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu"></span></a>
-        </div>
-  
-        <div class="col-12 col-xl-9 d-none d-xl-block"> 
-          <nav class="site-navigation position-relative text-right" role="navigation">
-            <ul class="site-menu js-clone-nav d-flex justify-content-end align-items-center">
-              <li><a href="#home" class="nav-link">Inicio</a></li>
-              <li><a href="#nosotros" class="nav-link">Sobre Nosotros</a></li>
-              <li><a href="#servicios" class="nav-link">Servicios</a></li>
-              <li><a href="#nuestros-clientes" class="nav-link">Nuestros Clientes</a></li>
-              <li><a href="#contactanos" class="nav-link">Contáctanos</a></li>
-              <li><a href="#" class="nav-link btn btn-primary btn-sm" id="btn-registrate">Regístrate</a></li>
-              <li><a href="#" class="nav-link btn btn-secondary btn-sm" id="btn-ingresar">Ingresar</a></li>
-            </ul>
-          </nav>
-        </div>
-  
+  <!-- HEADER CORREGIDO -->
+<header class="site-navbar py-3 js-site-navbar site-navbar-target" role="banner" id="site-navbar">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      
+      <!-- LOGO -->
+      <div class="col-6 col-xl-2 site-logo">
+        <h1 class="mb-0">
+          <a href="./" class="text-white h2 mb-0">
+            <img src="./images/logo-blanco.png" alt="Exacta Express" style="max-width: 160px; height: auto;">
+          </a>
+        </h1>
+      </div>
+
+      <!-- MENÚ NAVEGACIÓN -->
+      <div class="col-12 col-xl-10 d-none d-xl-block">
+        <nav class="site-navigation position-relative text-right" role="navigation">
+          <ul class="site-menu js-clone-nav d-flex justify-content-end align-items-center gap-3 mb-0">
+            <li><a href="#home" class="nav-link">Inicio</a></li>
+            <li><a href="#nosotros" class="nav-link">Sobre Nosotros</a></li>
+            <li><a href="#servicios" class="nav-link">Servicios</a></li>
+            <li><a href="#nuestros-clientes" class="nav-link">Nuestros Clientes</a></li>
+            <li><a href="#contactanos" class="nav-link">Contáctanos</a></li>
+            <li><a href="#" class="nav-link btn-registrate">Regístrate</a></li>
+            <li><a href="#" class="nav-link btn-ingresar">Ingresar</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- BOTÓN MENÚ MÓVIL -->
+      <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3">
+        <a href="#" class="site-menu-toggle js-menu-toggle">
+          <span class="icon-menu h3"></span>
+        </a>
       </div>
     </div>
-  </header>
+  </div>
+
+  <style>
+    .site-menu {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: nowrap;
+      padding-left: 0;
+    }
+
+    .site-menu li {
+      list-style: none;
+    }
+
+    .site-menu .nav-link {
+      display: inline-block;
+      padding: 8px 12px;
+      white-space: nowrap;
+    }
+
+    .site-logo img {
+      max-width: 160px;
+      height: auto;
+    }
+
+    @media (max-width: 1199px) {
+      .site-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+  </style>
+</header>
+
 
 
   <div class="site-blocks-cover overlay" style="background-image: url(images/hero_bg_2.jpg);" data-aos="fade"
