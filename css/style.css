@@ -2283,3 +2283,11 @@ h5,
   color: white !important;
 }
 
+/* === INICIO: FIX PARA SOLAPAMIENTO LOGO-NAV (PANTALLAS GRANDES) === */
+@media (min-width: 1200px) {
+  /* Añade padding izquierdo a la columna que contiene la navegación */
+  .site-navbar .row > .col-xl-9.d-xl-block { 
+    padding-left: 30px; /* Ajusta este valor si necesitas más o menos espacio */
+  }
+}
+/* === FIN: FIX PARA SOLAPAMIENTO LOGO-NAV === */
